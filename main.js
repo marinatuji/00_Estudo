@@ -18,19 +18,13 @@ $(document).ready(function () {
 //   firebase.auth().createUserWithEmailAndPassword(email, password)
 // });
 
-firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
-  // Handle Errors here.
-  let errorCode = error.code;
-  let errorMessage = error.message;
-  // ...
-});
-
-firebase.auth().createUserWithEmailAndPassword(email, password).then(function (error) {
-  // Handle Errors here.
-  let errorCode = error.code;
-  let errorMessage = error.message;
-  // ...
-});
+//codigo base da documentação do Firebase
+// firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
+//   // Handle Errors here.
+//   let errorCode = error.code;
+//   let errorMessage = error.message;
+//   // ...
+// });
 
 //promise-then syntax
 function littleBall(){
@@ -45,15 +39,15 @@ function littleBall(){
 }
 
 // async-await syntax
-async function littleBall(){
-  try{
-    const sucesso = await firebase.auth().createUserWithEmailAndPassword(email, password);
-    console.log('Sucesso:', sucesso);
+// async function littleBall(){
+//   try{
+//     const sucesso = await firebase.auth().createUserWithEmailAndPassword(email, password);
+//     console.log('Sucesso:', sucesso);
 
-  } catch (erro) {
-    console.log('Erro:', erro);
-  }
-}
+//   } catch (erro) {
+//     console.log('Erro:', erro);
+//   }
+// }
 
 function validEmail() {
 
