@@ -3,10 +3,10 @@ $(document).ready(function () {
   $("#login-submit").click((event) => {
     alert("Cadastrando");
     event.preventDefault(event);
-   let email = $("login-input").val();
-   let password = $("login-password").val();
-   littleBall();
-  })
+   let email = $("#login-input").val();
+   let password = $("#login-password").val();
+   littleBall(email, password);
+  });
 
 });
 
@@ -27,25 +27,25 @@ $(document).ready(function () {
 // });
 
 //promise-then syntax
-function littleBall(){
+function littleBall(email, password){
   firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then((sucesso) => {
-   window.location = "file.html";      
-   console.log('Sucesso:', sucesso);
+  .then((sucess) => {
+   window.location = "benvenido.html";      
+   console.log('Sucesso:', sucess);
   })
-  .catch((erro) => {
-    console.log('Erro:', erro);
+  .catch((error) => {
+    console.log('Erro:', error);
   });
 }
 
 // async-await syntax
 // async function littleBall(){
 //   try{
-//     const sucesso = await firebase.auth().createUserWithEmailAndPassword(email, password);
-//     console.log('Sucesso:', sucesso);
+//     const sucess = await firebase.auth().createUserWithEmailAndPassword(email, password);
+//     console.log('Sucesso:', sucess);
 
-//   } catch (erro) {
-//     console.log('Erro:', erro);
+//   } catch (error) {
+//     console.log('Erro:', error);
 //   }
 // }
 

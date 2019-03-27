@@ -64,3 +64,10 @@ https://stackoverflow.com/questions/42040014/firebase-create-user-without-sign-i
 
 https://nordicapis.com/what-is-the-difference-between-an-api-and-an-sdk/
 
+http://bluebirdjs.com/docs/api-reference.html
+
+"Promise é um objeto usado para processamento assíncrono. Um Promise (de "promessa") representa um valor que pode estar disponível agora, no futuro ou nunca."
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise
+promisses conceito do Javascript , exemplo posso usar promisses para acessas o BD pois
+pode demorar
+
